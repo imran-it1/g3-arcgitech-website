@@ -22,8 +22,14 @@ body {
     border: 0;
     cursor: pointer;
     font-style: normal;
+    margin-top: 30px;
 }
 
+.description-light-gray-text {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 
 /* Header Style */
@@ -82,20 +88,60 @@ nav ul li a {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.banner-description {
-    color: #727272;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
 
 .banner-img {
     width: 100%;
 }
 
+
+/* Main Styles */
+
+main {
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+/* Team Section Style */
+.team-container {
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+    margin-bottom: 120px;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-content-container {
+    padding-inline: 70px;
+}
+
+.team-title {
+    font-size: 2.8125rem;
+    margin-bottom: 20px;
+}
+
+.team-title .quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+
+.team-title .of-our {
+    color: #131313;
+    font-weight: 700;
+}
+
+.team-title .features {
+    color: #FF900E;
+    font-weight: 700;
+}
 
 /* Responsive Style */
 
@@ -114,6 +160,7 @@ nav ul li a {
         gap: 10px;
     }
 
+
     header {
         padding: 50px 40px;
     }
@@ -124,6 +171,20 @@ nav ul li a {
 
     .banner-content {
         margin: 30px 0;
+    }
+
+    .team-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .team-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .team-content-container {
+        padding-inline: 20px;
+        text-align: center;
     }
 }
 
@@ -148,5 +209,15 @@ nav ul li a {
 
     nav>ul {
         gap: 50px;
+    }
+
+    .team-content-container {
+        padding-inline: 20px;
+        text-align: center;
+    }
+
+    .team-container {
+        flex-direction: column-reverse;
+        gap: 25px;
     }
 }
