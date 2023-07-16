@@ -25,6 +25,13 @@ body {
     margin-top: 30px;
 }
 
+.btn-primary:hover {
+    outline: 2px solid black;
+    background-color: transparent;
+    color: #131313;
+}
+
+
 .description-light-gray-text {
     color: #727272;
     font-size: 1rem;
@@ -52,6 +59,21 @@ nav {
     color: #131313;
     font-size: 2.15rem;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-links li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #FF900E;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
 }
 
 nav>ul {
