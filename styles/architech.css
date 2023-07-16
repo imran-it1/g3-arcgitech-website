@@ -143,6 +143,54 @@ main {
     font-weight: 700;
 }
 
+
+
+/* Fact Style */
+
+.fact-container {
+    margin: 130px 0;
+}
+
+.fact-title {
+    color: #131313;
+    font-size: 2.815rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.fact-description {
+    max-width: 500px;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 50px 35px;
+    text-align: center;
+}
+
+.facts-card-container .card-stats {
+    color: #424242;
+    font-size: 2.815rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.facts-card-container .card-title {
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
 /* Responsive Style */
 
 
@@ -155,7 +203,8 @@ main {
         padding: 25px 20px;
     }
 
-    nav {
+    nav,
+    .facts-card-container {
         flex-direction: column;
         gap: 10px;
     }
@@ -186,9 +235,26 @@ main {
         padding-inline: 20px;
         text-align: center;
     }
+
+    .card {
+        min-width: 240px;
+        margin: auto;
+    }
+
+    .fact-container {
+        margin: 20px 0;
+    }
+
+    .fact-content {
+        text-align: center;
+    }
+
+    .team-container {
+        margin-bottom: 80px;
+    }
+
+
 }
-
-
 
 
 /* For Medium Device */
@@ -219,5 +285,17 @@ main {
     .team-container {
         flex-direction: column-reverse;
         gap: 25px;
+    }
+
+    .card {
+        flex-basis: 240px;
+    }
+
+    .fact-content {
+        text-align: center;
+    }
+
+    .fact-description {
+        margin: auto;
     }
 }
